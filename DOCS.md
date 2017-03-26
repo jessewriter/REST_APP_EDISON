@@ -49,17 +49,16 @@
 
 
 
-	POST /led_controllers
+	POST /LedControllers
 
 
 ### Parameters
 
 | Name    | Type      | Description                          |
 |---------|-----------|--------------------------------------|
-| access_token			| String			|  <p>master access token.</p>							|
+| isOn			| 			|  <p>Led controller's isOn.</p>							|
 | name			| 			|  <p>Led controller's name.</p>							|
 | color			| 			|  <p>Led controller's color.</p>							|
-| intensity			| 			|  <p>Led controller's intensity.</p>							|
 | frequency			| 			|  <p>Led controller's frequency.</p>							|
 | duration			| 			|  <p>Led controller's duration.</p>							|
 
@@ -67,27 +66,15 @@
 
 
 
-	DELETE /led_controllers/:id
+	DELETE /LedControllers/:id
 
-
-### Parameters
-
-| Name    | Type      | Description                          |
-|---------|-----------|--------------------------------------|
-| access_token			| String			|  <p>master access token.</p>							|
 
 ## Retrieve led controller
 
 
 
-	GET /led_controllers/:id
+	GET /LedControllers/:id
 
-
-### Parameters
-
-| Name    | Type      | Description                          |
-|---------|-----------|--------------------------------------|
-| access_token			| String			|  <p>master access token.</p>							|
 
 ## Retrieve led controllers
 
@@ -111,17 +98,16 @@
 
 
 
-	PUT /led_controllers/:id
+	PUT /LedControllers/:id
 
 
 ### Parameters
 
 | Name    | Type      | Description                          |
 |---------|-----------|--------------------------------------|
-| access_token			| String			|  <p>master access token.</p>							|
+| isOn			| 			|  <p>Led controller's isOn.</p>							|
 | name			| 			|  <p>Led controller's name.</p>							|
 | color			| 			|  <p>Led controller's color.</p>							|
-| intensity			| 			|  <p>Led controller's intensity.</p>							|
 | frequency			| 			|  <p>Led controller's frequency.</p>							|
 | duration			| 			|  <p>Led controller's duration.</p>							|
 
