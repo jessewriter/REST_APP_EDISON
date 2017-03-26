@@ -1,6 +1,9 @@
 import mongoose, { Schema } from 'mongoose'
 
 const ledControllerSchema = new Schema({
+isOn: {
+    type:Boolean
+}, 
   name: {
     type: String
   },
