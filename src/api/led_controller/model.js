@@ -28,6 +28,7 @@ ledControllerSchema.methods = {
     const view = {
       // simple view
       id: this.id,
+      isOn: this.isOn,
       name: this.name,
       color: this.color,
       intensity: this.intensity,

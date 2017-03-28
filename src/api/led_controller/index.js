@@ -7,7 +7,7 @@ import { schema } from './model'
 export LedController, { schema } from './model'
 
 const router = new Router()
-const { name, color, intensity, frequency, duration } = schema.tree
+const { isOn, name, color, intensity, frequency, duration } = schema.tree
 
 /**
  * @api {post} /led_controllers Create led controller
@@ -27,7 +27,7 @@ const { name, color, intensity, frequency, duration } = schema.tree
  */
 router.post('/',
   master(),
-  body({ name, color, intensity, frequency, duration }),
+  body({ isOn, name, color, intensity, frequency, duration }),
   create)
 
 /**
