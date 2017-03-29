@@ -37,7 +37,7 @@ ledControllerSchema.methods = {
     return full ? {
       ...view
       // add properties for a full view
-    this.isOn
+    
     } : view
   }
 }
