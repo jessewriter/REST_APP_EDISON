@@ -1,7 +1,6 @@
 import { Router } from 'express'
 import user from './user'
 import auth from './auth'
-import ledController from './led_controller'
 import ledController from './LedController'
 
 const router = new Router()
@@ -31,7 +30,7 @@ const router = new Router()
  */
 router.use('/users', user)
 router.use('/auth', auth)
-router.use('/led_controllers', ledController)
+
 router.use('/LedControllers', ledController)
 
 export default router
