@@ -36,8 +36,7 @@ ledControllerSchema.methods = {
 
     return full ? {
       ...view
-      // add properties for a full view
-    
+      // add properties for a full view 
     } : view
   }
 }
